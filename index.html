@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"><!-- link bootstrap CSS-->
+    <script src="https://kit.fontawesome.com/a0fd3005f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>SUYAI FITNESS HOUSE - HOMEPAGE</title>
+</head>
+<body>
+    <nav class="container-fluid   navbar navbar-expand-lg custom-bg">
+        <div class="row w-100 justify-content-between flex-wrap" id="Home">
+            <a class="col-4 navbar-brand" href="#Home"><h1 class="suyai-fitness">SUYAI FITNESS</h1></a>
+            <button class=" col-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="col-7 collapse navbar-collapse align-items-center justify-content-between" id="navbarNav">
+                <ul class="navbar-nav custom-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-nav" href="#Sedes">SEDES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-nav" href="#Qsomos">QUIENES SOMOS</a>
+                  </li>
+                    <a class="nav-link text-nav" href="https://suyaitrainingprogram.pythonanywhere.com/" target="_blank">ATLETAS</a>
+                  </li>
+                </ul>
+          
+              </div> 
+          </div>
+        </nav>
+        <header class="container-fluid">
+          <div class="carousel-container">
+            <div class="left-container col-md-3 d-none d-md-block">
+                <img src="./archivos/suyaitrans.png" alt="Logo" class="logo-chico">
+            </div>
+            <div id="carouselExample" class="carousel slide col-md-6 col-sm-12">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <video src="./archivos/Suyaivideo.mp4" autoplay loop muted alt="videopresentacion"></video>
+                  </div>
+                  <div class="carousel-item">
+                        <img src="./archivos/melichalk.jpeg" class="d-block w-100" alt="Foto Meli sonrisa">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./archivos/yanialrio.jpeg" class="d-block w-100" alt="Foto Yani">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./archivos/grupo.jpeg" class="d-block w-100" alt="Foto Coach squat">
+                   </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <div class="right-container col-md-3  d-none d-md-block">
+              <div class="text-container d-flex flex-column justify-content-center align-items-center">
+                <div class="text-left">
+                  SE
+                </div>
+                <div class="text-center">
+                  TU MEJOR
+                </div>
+                <div class="text-right">
+                  VERSION
+                </div>
+              </div>
+            </div>
+
+          </div>
+        
+
+
+        </header>
+             <main class="container">
+              <section class="container-fluid" id="Sedes">
+                <div class="row justify-content-between">
+                  <div class="card bg-transparent col-md-6 col-sm-12" id="Saavedra">
+                    <img src="./archivos/Saavedraachica2.jpg" class="card-img-top" alt="fotosaavedra">
+                    <div class="card-body">
+                      <h5 class="card-title">Suyai Saavedra</h5>
+                      <p class="card-text">Con más de 8 años, el lugar que nos vio nacer, sigue más vigente que nunca. Fiel a los principios y valores que sosteníamos cuando empezamos, con el espíritu de comunidad, intacto.</p>
+                      <button class="btn btn-primary" onclick="toggleMap('mapSaavedra')">Ubicación</button>
+                      <div id="mapSaavedra" style="display: none;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.802918749934!2d-58.49451908476997!3d-34.55185208047038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7c5b6e4d8f%3A0x42d370a1c7b9b8d!2sAv.%20Ricardo%20Balbin%203963%2C%20C1431%20CABA!5e0!3m2!1sen!2sar!4v1638475403434!5m2!1sen!2sar" width="450" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                      <button class="btn btn-primary" onclick="toggleHorarios('horariosSaavedra')">Horarios</button>
+                      <div class="HorariosSaavedra"id="horariosSaavedra" style="display: none;">
+                        <p class="HorariosP">Clases y Open Box:</p>
+                        <ul>
+                          <li>Clases: Lunes a Viernes: 7:00 - 10:00/ 12:00 - 13:00 / 17:00 - 21:00.</li>
+                          <li>Sábado: 11:00 - 13:00.</li>
+                          <li>Open Box: Lunes a Viernes: 10:00 a 12:00. </li>
+                          
+                        </ul>
+                      </div>
+                      <button class="btn btn-secondary">
+                        <a href="https://suyaisaavedra.turnosweb.com/" target="_blank">CLASE DE PRUEBA</a>
+                     </button>
+
+          
+                    </div>
+                  </div>
+                  <div class="card bg-transparent col-md-6 col-sm-12" id="Alrio">
+                    <img src="./archivos/AlRioAchicada2.jpeg" class="card-img-top alrio" alt="fotoalrio">
+                    <div class="card-body">
+                      <h5 class="card-title">Suyai Al Río</h5>
+                      <p class="card-text">Ubicada en Vicente Lopez, a metros de la Av. General Paz,
+                        nuestra nueva casa, ofrece las más modernas instalaciones, con el fin de seguir extendiendo la comunidad, más allá de las luces de la autopista.</p>
+                      <button class="btn btn-primary" onclick="toggleMap('mapAlrio')">Ubicación</button>
+                      <div id="mapAlrio" style="display: none;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.162396257525!2d-58.3565698847708!3d-34.58941936590847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3c9e7d1a4f%3A0x1a75c2a8a5a6ebc!2sAv.%20Lugones%204000%2C%20C1426%20CABA!5e0!3m2!1sen!2sar!4v1638475434780!5m2!1sen!2sar" width="450" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </div>
+                      <button class="btn btn-primary" onclick="toggleHorarios('horariosAlrio')">Horarios</button>
+                       <div class= "HorariosAlRio" id="horariosAlrio" style="display: none;">
+                    
+                        <p class="HorariosP">Clases y Open Box:</p>
+                         <ul>
+                          <li>Clases: Lunes a Viernes: 7:00 - 9:00 / 12:00 - 14:30 / 17:00 - 21:00.</li>
+                          <li>Sábado: 10:00 - 12:00.</li>
+                          <li>Open Box: Lunes a Viernes: 9:00 - 12:00.</li>
+                          
+                        </ul>
+                       </div>
+                       <button class="btn btn-secondary">
+                          <a href="https://suyaifh2.turnosweb.com/" target="_blank">CLASE DE PRUEBA</a>
+                       </button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+               </section>
+
+               <section>
+                <div class ="container-fluid">
+                  <div class="qs" id="Qsomos">
+                    <img src="./archivos/Quienes somos.png" class="qs" alt="Descripcion">
+                </div>
+              </section>
+        </main>
+        <footer class="footer custom-bg">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                      <ul class="list-inline mb-2">
+                          <li class="list-inline-item">Copyright &copy; 2023</a></li>
+                          <li class="list-inline-item">DR Devs</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                      <ul class="list-inline mb-0">
+                          <li class="list-inline-item">
+                              <a href="https://instagram.com/suyai.trainingprogram?igshid=MzRlODBiNWFlZA=="><i class="bi-instagram fs-3", style= "color:var(--colorOrange)"></i>Suyai Training Program</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.instagram.com/suyai_saavedra/?hl=es"><i class="bi-instagram fs-3", style= "color:var(--colorOrange)"></i>Suyai Saavedra</a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.instagram.com/suyai.fitness/"><i class="bi-instagram fs-3", style= "color: var(--colorOrange)"></i>Suyai Al Río</a>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+
+        <script src="./scriptssuyaiweb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
