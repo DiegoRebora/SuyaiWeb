@@ -2,16 +2,27 @@
     --colorOrange: rgb(254, 80, 30);
     --colorWhite:#F5F5F5;
     --colorBlack:#000000;
-    --colordarkGrey:rgb(83, 86, 90);
-    --colorMediumGrey:#bdbaba;
+    --colordarkGray:linear-gradient(94deg, rgb(46, 45, 45) 0%, rgb(126, 126, 126) 100%);
+    --colordarkGrayR:linear-gradient(94deg, rgb(126, 126, 126) 0%,  rgb(46, 45, 45)  100%);
+    --colorMediumGray:#bdbaba;
+    --colorBgGray: linear-gradient(94deg, rgb(174, 172, 171) 0%, rgb(235, 208, 181) 100%);
 }
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 body {
-    background-color: var(--colorMediumGrey);
+    background-image: linear-gradient(94deg, rgba(174, 172, 171, 0.7) 0%, rgba(218, 191, 165, 0.7) 100%), url(./archivos/melichalk.jpeg);
 }
+.bg-custom {
+    background: var(--colordarkGray);
+}
+.bg-custom-reverse {
+   background: var(--colordarkGrayR);
+}
+
 .container {
     padding: 0px;
+    margin-top: 20px;
+
 }
 .container-fluid {
     padding: 0px;
@@ -30,9 +41,7 @@ body {
 .bi-whatsapp {
     color: var(--colorOrange);
 }
-.custom-bg {
-    background-color:var(--colordarkGrey);
-}
+
 .text-nav {
     font-size: 22px;
     text-shadow: 3px 3px 8px rgb(255, 255, 255);
@@ -71,15 +80,30 @@ header {
 }
 #carouselExample {
     --carousel-width: 52%; 
-    width: var(--carousel-width);
+    /*width: var(--carousel-width);*/
     opacity:0.8;
   }
+.carousel-inner {
+    width:100%;
+}
+@media (max-width:768px) {
+    .left-container,
+    .right-container {
+        display:none;
+    }
+}
 .logo-chico {
     max-width: 80%;
     max-height: 80%;
     align-items: center;
     margin-top: 55px;
+    margin-left: 20px;
+    transition: transform 1.5s ease-in-out;
+    animation: fade-in 3s ease-in-out forwards;
 }
+.logo-chico:hover {
+    transform: rotate(360deg);
+  }
 .card {
     border-color: transparent;
 }
@@ -90,9 +114,12 @@ header {
 .card-title {
     color: var(--colorOrange)
 }
+p {
+    font-weight: bold;
+}
 
 .btn-primary {
-    background-color: var(--colordarkGrey);
+    background-color: rgb(43, 42, 42);
     border: transparent;
 }
 
@@ -107,6 +134,17 @@ header {
     font-weight: bold;
     font-family: 'Black Ops One';
     line-height: 100px;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .HorariosAlRio{
     margin-top: 20px
@@ -133,15 +171,16 @@ header {
     margin-left: 0;
 }
 footer a{
-    color: white;
+    color: rgb(226, 212, 181);;
     text-decoration: none;
     font-family: "Arial", sans-serif;
-    font-size: small
+    font-size: medium;
 
 }
-.list-inline-item {
-    color: white;
-    font-family: "Courier", sans-serif;
-    font-size: small
 
+.list-inline-item {
+        font-size: 22px;
+        text-shadow: 3px 3px 8px rgb(255, 255, 255);
+        color: white;
+        font-family: 'Black Ops One';
 }
