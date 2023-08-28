@@ -80,7 +80,6 @@ header {
 }
 #carouselExample {
     --carousel-width: 52%; 
-    /*width: var(--carousel-width);*/
     opacity:0.8;
   }
 .carousel-inner {
@@ -158,9 +157,10 @@ p {
 .btn-secondary {
     background-color: var(--colorOrange);
     border: transparent;
-
-
+    height: auto; 
+    padding: 0.5rem 1rem; 
 }
+
 .btn-secondary a {
     color: white;
     text-decoration: none;
