@@ -1,4 +1,4 @@
-function toggleMap(mapId) {
+/*function toggleMap(mapId) {
     let map = document.getElementById(mapId);
     if (map.style.display === "none") {
       map.style.display = "block";
@@ -16,4 +16,12 @@ function toggleMap(mapId) {
     } else {
       horarios.style.display = "none";
     }
-  }
+  }*/
+
+function mostrar(variable) {
+  let elemento = document.getElementById(variable);
+  if (elemento.style.display === "none") {
+    elemento.style.display = "block";
+} else {
+  elemento.style.display = "none";
+} }
