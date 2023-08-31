@@ -38,9 +38,8 @@ body {
 .bi-instagram  {color: var(--colorOrange);
 
 }
-.bi-whatsapp {
-    color: var(--colorOrange);
-}
+
+
 
 .text-nav {
     font-size: 22px;
@@ -120,6 +119,8 @@ p {
 .btn-primary {
     background-color: rgb(43, 42, 42);
     border: transparent;
+    --bs-btn-hover-bg: gray ;
+    --bs-btn-hover-border-color: gray;
 }
 
 
@@ -183,4 +184,21 @@ footer a{
         text-shadow: 3px 3px 8px rgb(255, 255, 255);
         color: white;
         font-family: 'Black Ops One';
+}
+.bi-whatsapp{ 
+    color: var(--colorOrange);
+    font-size: 30px;
+}
+.bi-whatsapp:hover {
+    color: white;
+
+}
+.btn-success {
+    background-color: transparent;
+    border: transparent;
+
+}
+.btn-success:hover {
+    background-color: transparent;
+    border: transparent;
 }
